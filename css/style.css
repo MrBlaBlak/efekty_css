@@ -28,9 +28,7 @@ a{
 img{
     float:right;
 }
-p:nth-child(2){
-    clear:both;
-}
+
 #kotek{
     height:100px;
         width:100px;
@@ -57,4 +55,25 @@ p:nth-child(2){
     background-size:contain;
     background: url(http://szafunia.pl/img/2013/11/20546.jpg) center no-repeat;
     background-size: cover;
+}
+#overflow p:nth-child(odd){
+    background-color:cyan;
+}
+#overflow p:nth-child(even){
+    background-color: antiquewhite;
+}
+#overflow p{
+    width: 25%;
+    float:left;
+    height: 50px;
+    
+}
+#overflow p:nth-child(2){
+    overflow:hidden;
+}
+#overflow p:nth-child(3){
+    overflow:scroll;
+}
+#overflow p:nth-child(4){
+    overflow:auto;
 }
