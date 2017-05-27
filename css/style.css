@@ -1,0 +1,9 @@
+p{
+    display: inline;
+}
+p:nth-child(odd){
+    background-color: blue;
+}
+p:nth-child(even){
+    background-color: orange;
+}
